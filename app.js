@@ -19,7 +19,7 @@ var app = express();
 
 app.set('port', process.env.PORT || 3000);
 
-//bodyParser를 사용해 application.x-www-form-urlencoded 파싱
+//bodyParser를 사용해 application.x-www-form-urlencoded 파싱 
 app.use(bodyParser.urlencoded({extended : false}));
 
 //bodyParser를 사용해 application/json 파싱
