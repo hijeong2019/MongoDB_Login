@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, height=device-height, inital-scale=1">
+    <title>로그인 테스트</title>
+    <link href="/public/semantic.css" rel="stylesheet">
+    <script src="./semantic.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(102, 48, 146) ;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #cardbox {
+            width: 30em;
+            height: 30em;
+            text-align: center;
+        }
+        #titleText {
+            font-size: 1.7em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        #contentsText {
+            color: #999;
+        }
+        #form1 {
+            padding: 1em;
+        }
+        #texttype{
+            margin: 1em;
+        }
+        #hi{
+            margin-top: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="cardbox" class="ui card">
+            <div class="content" id="hi">
+                <div>
+                    <div id="titleText" class="header">로그인</div>
+                    <div id="contentsText" class="description">아이디와 비번을 입력하고 로그인해라</div>
+                </div>
+                <form id="form1" method="post" action="/process/login">
+                    <div class="ui input" id="texttype">
+                        <input class="inputbox" type="text" placeholder="아이디 입력" name="id">
+                    </div>
+                    <div class="ui input" id="texttype">
+                        <input class="inputbox" type="password" placeholder="비밀번호 입력" name="password">
+                    </div>
+                    <div>
+                        <input id="submitButton" class="ui purple button" type="submit" value="로그인">
+                    </div>    
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
